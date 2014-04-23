@@ -1,16 +1,13 @@
-<?php
-if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-class MY_Controller extends CI_Controller{
-   
-    public function __construct() {
+<?
+class Backend extends MY_Controller{
+	
+	public function __construct() {
         parent::__construct();
         $this->load->helper('url'); 
         
     }
-    /*
-     * renderadmin Means render admin template
-     */
-    public function renderadmin($contentviewname,$viewdata=array()){
+
+	public function renderadmin($contentviewname,$viewdata=array()){
         
         $header='templates/header';
         $footer='templates/footer';
@@ -112,5 +109,6 @@ class MY_Controller extends CI_Controller{
         $this->load->view($footer);
         
     }
+
 }
 ?>

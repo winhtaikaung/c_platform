@@ -12,7 +12,7 @@
 		http://twitter.com/halalit_usman
 	-->
 	<meta charset="utf-8">
-	<title>Free HTML5 Bootstrap Admin Template</title>
+	<title><?=$title=isset($windowname)?$windowname:''?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template.">
 	<meta name="author" content="Muhammad Usman">
@@ -43,6 +43,8 @@
 	<link href='<?=  base_url();?>css/jquery.iphone.toggle.css' rel='stylesheet'>
 	<link href='<?=  base_url();?>css/opa-icons.css' rel='stylesheet'>
 	<link href='<?=  base_url();?>css/uploadify.css' rel='stylesheet'>
+        <link href='<?=  base_url();?>css/jquery.treeview.css' rel='stylesheet'>
+        
 
 	<!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>

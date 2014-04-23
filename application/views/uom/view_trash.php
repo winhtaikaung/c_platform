@@ -14,17 +14,10 @@
                                                                                  <td ><?=$row->uom_name ?></td>
                                                                                  <td ><?=$row->remark?></td>
                                                                                   <td>
-                                                                                      <a class="btn btn-success" href="<?=  base_url()?>">
+                                                                                      
+                                                                                      <a class="btn btn-success" href="<?=  base_url()?>uom/recipe/<?=$row->id?>">
 										<i class="icon-zoom-in icon-white"></i>  
-                                                                                    View                                            
-                                                                                </a>
-                                                                                      <a class="btn btn-info" href="<?=  base_url()?>uom/update/<?=$row->id?>">
-										<i class="icon-zoom-in icon-white"></i>  
-                                                                                    Edit                                            
-                                                                                </a>
-                                                                                      <a class="btn btn-danger" href="<?=  base_url()?>uom/del/<?=$row->id?>">
-										<i class="icon-zoom-in icon-white"></i>  
-                                                                                    Delete                                            
+                                                                                    Recipe                                           
                                                                                 </a>
                                                                                   </td>
                                                                          </tr>

@@ -42,7 +42,7 @@
 $route['404_override'] = '';*/
 
 //making default controller
-$route['default_controller'] = "admin/notification";
+$route['default_controller'] = "panel/index";
 
 $route['admin']='admin';
 $route['admin/notify']='admin/notification';
@@ -52,11 +52,20 @@ $route['admin/getdata']='admin/getcount';
 
 $route['product/insert']='product/insert';
 $route['product/viewall']='product/viewall';
+#The duplicate route with parameter(:any) is get method & without parameter was post
+
 
 
 $route['uom/insert']='uom/insert';
-$route['uom/update']='uom/update';
+$route['uom/update']='uom/post_update';
+$route['uom/update/(:any)']='uom/get_update/$1';
+
+$route['uom/trash']='uom/view_trash';
 $route['uom/viewall']='uom/viewall';
+$route['uom/del/(:any)']='uom/delete/$1';
+$route['uom/recipe/(:any)']='uom/recipe/$1';
+
+$route['category/viewall']='category/viewall';
 
 /*$route['category']='category';
 $route['category/create.jsp']='category/insert';

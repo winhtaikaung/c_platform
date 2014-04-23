@@ -100,8 +100,11 @@
 	<script src="<?=  base_url();?>js/jquery.uploadify-3.1.min.js"></script>
 	<!-- history.js for cross-browser state change on ajax -->
 	<script src="<?=  base_url();?>js/jquery.history.js"></script>
+        
+        <script src="<?=  base_url();?>js/jquery.treeview.js"></script>
 	<!-- application script for Charisma demo -->
 	<script src="<?=  base_url();?>js/charisma.js"></script>
+        
 	
 	<?php //Google Analytics code for tracking my demo site, you can remove this.
 		if($_SERVER['HTTP_HOST']=='usman.it') { ?>
