@@ -3,10 +3,8 @@
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
- * 
- * 
- */     
-
+ */
+   
     
     function render($param){
         $CI=& get_instance();
@@ -19,10 +17,10 @@
             
                 
                if(count($result)==0){
-                    echo "<li class='nav-header'><a href=# data-rel=$item->id>$item->desc</a></li>";
+                    echo "<li class='nav-header'><a href=# data-rel=$item->id data-head=$item->head_id>$item->desc</a></li>";
                    
                }else{
-                  echo "<li class='tree-toggler nav-header'><span class=icon-plus-sign >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=# data-rel=$item->id>$item->desc</a></span>";
+                  echo "<li class='tree-toggler nav-header'><span class=icon-plus-sign >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=# data-rel=$item->id data-head=$item->head_id>$item->desc</a></span>";
                         echo "<ul class='nav nav-list tree'>";
                             render($item->id);
                         echo "</ul>";
@@ -32,15 +30,21 @@
                 
         }
     }
-        echo "<ul class='nav nav-list'>";
+        
+        echo "<ul class='nav nav-list' >";
             render(0);
         echo "</ul>";
+       
+       
 
    ?>
 
 
 
+
 <script>
+
+
 
 $(function(){
     
@@ -59,5 +63,7 @@ $(function(){
        
 });
 
+
 </script>
+
 

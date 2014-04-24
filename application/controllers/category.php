@@ -22,7 +22,11 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
         }
 
         public function insertcategory(){
-
+            $data=array();
+            $data['windowname']='Insert Category';
+            $data['windowwidth']='4';
+            
+            $this->backend->renderwindow("category/insertcat",$data);
             
         }
 
