@@ -23,7 +23,7 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
         public function insertcategory(){
 
-
+            
         }
 
         

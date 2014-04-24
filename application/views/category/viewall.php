@@ -19,21 +19,22 @@
             
                 
                if(count($result)==0){
-                    echo "<li class='tree-toggler nav-header'><a href=# data-rel=$item->id>$item->desc</a></li>";
+                    echo "<li class='nav-header'><a href=# data-rel=$item->id>$item->desc</a></li>";
                    
                }else{
-                  echo "<li class='tree-toggler nav-header'><span class=icon-plus >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=# data-rel=$item->id>$item->desc</a></span></li>";
-                   echo "<ul class='nav nav-list tree'>";
-                   render($item->id);
-                   echo "</ul>";
+                  echo "<li class='tree-toggler nav-header'><span class=icon-plus >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=# data-rel=$item->id>$item->desc</a></span>";
+                        echo "<ul class='nav nav-list tree'>";
+                            render($item->id);
+                        echo "</ul>";
+                    echo "</li>";
                    
                }
                 
         }
     }
-    echo "<ul class='nav nav-list'>";
-    render(0);
-     echo "</ul>";
+        echo "<ul class='nav nav-list'>";
+            render(0);
+        echo "</ul>";
 
    ?>
 
@@ -42,9 +43,22 @@
 <script>
 
 $(function(){
-    $('.tree-toggler').click(function () {
-		$(this).parent().children('ul.tree').toggle(300);
-	});
+    
+        $('.icon-plus').siblings().slideToggle(100);
+        $(".icon-plus").hover(function(){
+            $(this).css('cursor','pointer');
+        });
+        $('.icon-plus').click(function () {
+                $(this).attr('class','icon-minus');               
+                
+		$(this).siblings().slideToggle(100);
+                
+                $('.icon-minus').click(function () {
+                        $(this).attr('class','icon-plus');
+            
+                });
+                
+	});        
 });
 
 </script>
