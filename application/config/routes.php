@@ -66,7 +66,9 @@ $route['uom/del/(:any)']='uom/delete/$1';
 $route['uom/recipe/(:any)']='uom/recipe/$1';
 
 $route['category/viewall']='category/viewall';
-$route['category/insert']='category/insertcategory';
+$route['category/insert']='category/insert';
+$route['category/edit/(:any)']='category/get_update/$1';
+$route['category/edit']='category/post_update';
 
 /*$route['category']='category';
 $route['category/create.jsp']='category/insert';

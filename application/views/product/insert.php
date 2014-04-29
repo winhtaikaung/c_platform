@@ -1,47 +1,26 @@
 <? ?>
-<div class="row-fluid">
-				<div class="box span12">
-					<div class="box-header well">
-						<h2><i class="icon-info-sign"></i> Product Insert</h2>
-						<div class="box-icon">
-							<a href="#" class="btn btn-setting btn-round"><i class="icon-cog"></i></a>
-							<a href="#" class="btn btn-minimize btn-round"><i class="icon-chevron-up"></i></a>
-							<a href="#" class="btn btn-close btn-round"><i class="icon-remove"></i></a>
+<ul class="nav nav-tabs" id="myTab">
+							<li class="active"><a href="#info">Info</a></li>
+							<li><a href="#custom">Custom</a></li>
+							<li><a href="#messages">Messages</a></li>
+						</ul>
+						 
+						<div id="myTabContent" class="tab-content">
+							<div class="tab-pane active" id="info">
+								<h3>Charisma <small>a fully featued template</small></h3>
+								<p>Its a fully featured, responsive template for your admin panel. Its optimized for tablet and mobile phones. Scan the QR code below to view it in your mobile device.</p> <img alt="QR Code" class="charisma_qr center" src="img/qrcode136.png" />
+							</div>
+							<div class="tab-pane" id="custom">
+								<h3>Custom <small>small text</small></h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales at. Nulla tellus elit, varius non commodo eget, mattis vel eros. In sed ornare nulla. Donec consectetur, velit a pharetra ultricies, diam lorem lacinia risus, ac commodo orci erat eu massa. Sed sit amet nulla ipsum. Donec felis mauris, vulputate sed tempor at, aliquam a ligula. Pellentesque non pulvinar nisi.</p>
+							</div>
+							<div class="tab-pane" id="messages">
+								<h3>Messages <small>small text</small></h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales at. Nulla tellus elit, varius non commodo eget, mattis vel eros. In sed ornare nulla. Donec consectetur, velit a pharetra ultricies, diam lorem lacinia risus, ac commodo orci erat eu massa. Sed sit amet nulla ipsum. Donec felis mauris, vulputate sed tempor at, aliquam a ligula. Pellentesque non pulvinar nisi.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor.</p>
+							</div>
 						</div>
-					</div>
-					<div class="box-content">
-						<form action="" >
-                                                    <label>Name</label>
-							<input type="text" name="p_name" placeholder="Product Name"/>
-                                                        <label>Product Code</label>
-                                                        <input type="text" name="p_code" placeholder="Product Code"/>
-                                                        <label>Expire Date</label>
-                                                        <input type="text" placeholder="Expire Date" class="input-xlarge datepicker" name="exp_date" id="date01" >
-                                                        
-                                                        <label>Price</label>
-                                                        <input type="text" name="p_price" placeholder="Price"/>
-                                                        
-                                                        
-                                                         <div class="control-group">
-								<label class="control-label" for="selectError">Product Type</label>
-								<div class="controls">
-								  <select id="selectError" data-rel="chosen">
-									<option value="0" selected="true">Select type of foods</option>
-                                                                        <option value="1">Morning</option>
-                                                                        <option value="2">Evening</option>
-                                                                        <option value="3">Lunch</option>
-								  </select>
-								</div>
-							  </div>
-                                                       
-                                                        <button class="btn btn-large btn-primary btn-round">Insert</button>
-
-						</form>
-						
-						<div class="clearfix"></div>
-					</div>
-				</div>
-			</div>
 <script>
     
 </script>
